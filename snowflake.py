@@ -1,5 +1,5 @@
 import pygame
-from math import sin, cos, radians, pi
+from math import sin, cos, radians
 
 pygame.init()
 
@@ -64,7 +64,9 @@ def main():
                 lines = setup()
             if keys[pygame.K_SPACE]:
                 # for _ in range(len(lines)): (if you want to see it stage by stage)
-                iter(lines, lines[0]) # you could also use a for loop of arbitrary loops
+                iter(
+                    lines, lines[0]
+                )  # you could also use a for loop of arbitrary loops
 
         screen.fill((0, 0, 0))
 
