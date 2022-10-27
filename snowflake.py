@@ -63,8 +63,8 @@ def main():
             if keys[pygame.K_LSHIFT]:
                 lines = setup()
             if keys[pygame.K_SPACE]:
-                # for _ in range(len(lines)): (if you want to see it stage by stage)
-                # you could also use a for loop of arbitrary loops
+                # If you want to see it stage by stage:
+                # for _ in range(len(lines)): 
                 iter(lines, lines[0])
 
         screen.fill((0, 0, 0))
